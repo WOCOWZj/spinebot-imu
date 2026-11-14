@@ -1,0 +1,22 @@
+# ---------- 构建产物 ----------
+/cmake-build-debug/
+/cmake-build-*/
+build/
+
+# ---------- IDE ----------
+.idea
+.cproject
+.project
+.mxproject
+
+# ---------- CubeMX 生成但本项目未使用（实际用的是 Core/ 下的那份）----------
+startup_stm32h723xx.s
+STM32H723XG_FLASH.ld
+
+# ---------- 上位机工具产物 ----------
+__pycache__/
+*.pyc
+*.log
+
+# 说明: cmake/ 与 CMakePresets.json 是构建必需（toolchain 文件在 cmake/ 里），
+# 故意不忽略，否则新克隆的仓库无法 configure。
